@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>序选择器</title>
+	<style>
+	/*	p:nth-child(2){
+			color: red;
+					}*/
+	/*	p:first-child{
+			color: red;		}*/
+		/*	p:last-child{
+				color: red;
+			}*/
+			/*p:nth-child(2n){
+				color: red;
+			}*/
+			/*ul:nth-child(1){
+				color: red;
+			}*/
+			ul:nth-of-type(1){
+				color: red;
+			}
+        /* [title="kuazhu"]{
+         	color: red;
+         }*/
+         /*[title|="kuazhu"]{
+         	color: red;
+         }*/
+      /*   [title^=kuazhu]{
+         	color: red;
+         }*/
+          [title$=com]{
+          	color: red;
+          }
+          a:link{
+          	color: red;
+          }
+          a:visited{
+          	color: green;
+          }
+          a:hover{
+          	color: yellow;
+          }
+          a:active{
+          	color: blue;
+          }
+
+
+	</style>
+</head>
+<body>
+	<a href="#" title="www.kuazhu.com">a1</a>
+	<a href="#" title="www.kuazhu com">a2</a>
+	<a href="#" title="kuazhu">a3</a>
+	<a href="#" title="kuazhu-com">a4</a>
+	<a href="#" title="www-kuazhu.com">a5</a>
+	
+	<ul>
+		<li>我是段落1</li>
+		<li>我是段落2</li>
+		<li>我是段落3</li>
+		<li>我是段落4<li>
+		<li>我是段落5</li>
+		<li>
+			<p>我11</p>
+			<p>我是段落12</p>
+			<p>我是段落13</p>
+			<p>我是段落14</p>
+			<p>我是段落15</p>
+		</li>
+	</ul>
+	<h1>我是标题</h1>
+	<p>我是段落</p>
+	<p>我是段落</p>
+	<p>我是段落</p>
+	<p>我是段落</p>
+
+</body>
+</html>
